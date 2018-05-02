@@ -1,0 +1,43 @@
+<link rel="import" href="polymer/polymer/polymer.html">
+
+<dom-module id="col-box">
+  <template>
+    <style>
+      :host
+      {
+        display: block;
+        width: 200px;
+        height: 100%;
+        background-color: #d8d8d8;
+      }
+
+      .title
+      {
+        font-size: 25px;
+      }
+    </style>
+
+    <div class="title">
+      hey
+    </div>
+  </template>
+
+  <script>
+    class colBox extends Polymer.Element
+    {
+      static get is()
+      {
+        return "col-box";
+      }
+
+      static get properties()
+      {
+        return {
+
+        };
+      }
+    }
+
+    customElements.define(colBox.is,colBox);
+  </script>
+</dom-module>
