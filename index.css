@@ -45,3 +45,9 @@ p
     height: 65%;
     overflow: auto;
 }
+
+img
+{
+    display: inline-block;
+    height: 100%;
+}
