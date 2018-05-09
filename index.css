@@ -17,6 +17,7 @@ body
     margin: 0;
     font-size: 0;
     font-family: "hw4";
+    overflow: hidden;
 }
 
 p
@@ -25,13 +26,6 @@ p
 }
 
 /*-- top elements --*/
-.top-sliderholder
-{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
 .top-slider
 {
     white-space: nowrap;
