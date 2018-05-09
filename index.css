@@ -25,6 +25,31 @@ p
 }
 
 /*-- top elements --*/
+.top-sliderholder
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.top-slider
+{
+    white-space: nowrap;
+}
+
+.top-slider>div
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-pageholder
+{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
 .main-page
 {
     display: flex;
@@ -32,6 +57,12 @@ p
     min-height: 100%;
     flex-direction: column;
     overflow: hidden;
+}
+
+.sub-page
+{
+    width: 100%;
+    font-size: 20px;
 }
 
 .top-box
