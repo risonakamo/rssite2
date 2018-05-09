@@ -40,6 +40,13 @@
         transform: rotate(-90deg);
         user-select: none;
         z-index: -1;
+        opacity: 0;
+        transition: opacity .2s;
+      }
+
+      :host-context(.col-holderholder:hover) .side-label
+      {
+        opacity: 1;
       }
 
       .expand-content
