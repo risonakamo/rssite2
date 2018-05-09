@@ -41,10 +41,29 @@
         user-select: none;
         z-index: -1;
       }
+
+      .expand-content
+      {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-size: 20px;
+      }
+
+      :host(.expanded) .expand-content
+      {
+        display: block;
+      }
     </style>
 
     <div class="wrap" on-click="toggleExpand">
       <img src="https://i.imgur.com/z7TkKte.png">
+      <div class="expand-content">
+        hey there
+      </div>
     </div>
 
     <div class="side-label">エレファント</div>
