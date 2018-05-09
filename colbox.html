@@ -6,15 +6,24 @@
       :host
       {
         display: inline-block;
+        position: relative;
+        vertical-align: top;
         width: 200px;
         height: 450px;
         width: auto;
         background-color: #d8d8d8;
+        transition: margin .2s;
+        cursor: pointer;
       }
 
       :host(.expanded)
       {
         width: 500px;
+      }
+
+      :host(.show-name)
+      {
+        margin: 0 15px 0 15px;
       }
 
       .title
@@ -26,9 +35,21 @@
       {
         height: 100%;
       }
+
+      .side-label
+      {
+        position: absolute;
+        font-size: 26px;
+        bottom: 60px;
+        left: -95px;
+        transform: rotate(-90deg);
+        user-select: none;
+        z-index: -1;
+      }
     </style>
 
     <img src="https://i.imgur.com/z7TkKte.png">
+    <div class="side-label">エレファント</div>
   </template>
 
   <script>
