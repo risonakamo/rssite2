@@ -10,7 +10,6 @@
         vertical-align: top;
         width: 200px;
         height: 450px;
-        width: auto;
         background-color: #d8d8d8;
         transition: margin .2s,width .2s;
         cursor: pointer;
@@ -44,7 +43,10 @@
       }
     </style>
 
-    <img src="https://i.imgur.com/z7TkKte.png" on-click="toggleExpand">
+    <div class="wrap" on-click="toggleExpand">
+      <img src="https://i.imgur.com/z7TkKte.png">
+    </div>
+
     <div class="side-label">エレファント</div>
   </template>
 
@@ -65,7 +67,16 @@
 
       toggleExpand()
       {
-        this.classList.toggle("expanded");
+        if (this.classList.contains("expanded"))
+        {
+          this.classList.remove("expanded");
+        }
+
+        else
+        {
+          this.classList.add("expanded");
+          this.dispatchEvent(new CustomEvent("expanded"));
+        }
       }
     }
 
