@@ -47,6 +47,12 @@ p
     display: flex;
     height: 450px;
     /* width: auto; */
-    justify-content: center;
+    /* justify-content: center; */
     flex: 0 1 450px;
+}
+
+.col-holderholder
+{
+    margin: auto;
+    white-space: nowrap;
 }
