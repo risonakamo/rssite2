@@ -19,6 +19,7 @@
       {
         width: 500px;
         margin: 0 !important;
+        cursor: default;
       }
 
       .title
@@ -120,6 +121,11 @@
           this.classList.add("expanded");
           this.dispatchEvent(new CustomEvent("expanded"));
         }
+      }
+
+      viewmore()
+      {
+        _topslider.classList.add("subpage-active");
       }
     }
 

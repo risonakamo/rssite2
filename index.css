@@ -30,6 +30,12 @@ p
 .top-slider
 {
     white-space: nowrap;
+    transition: transform .5s ease-out;
+}
+
+.top-slider.subpage-active
+{
+    transform: translateX(-100%);
 }
 
 .top-slider>div
@@ -103,5 +109,11 @@ p
 {
     font-size: 40px;
     color: black;
-    user-select: none;
+}
+
+.more-button
+{
+    width: 100px;
+    height: 50px;
+    background-color: red;
 }

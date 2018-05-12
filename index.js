@@ -1,8 +1,16 @@
 window.onload=main;
 
+var _topslider;
+
 function main()
 {
+    _topslider=document.querySelector(".top-slider");
+
     colboxevents();
+
+    document.querySelector(".more-button").addEventListener("click",(e)=>{
+        e.currentTarget.parentElement.parentElement.viewmore();
+    });
 }
 
 //col-box outside event handlers
