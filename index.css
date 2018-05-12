@@ -101,5 +101,7 @@ p
 /*-- colbox content --*/
 .colbox-infobox
 {
-
+    font-size: 40px;
+    color: black;
+    user-select: none;
 }

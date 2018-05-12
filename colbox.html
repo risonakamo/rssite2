@@ -26,9 +26,16 @@
         font-size: 25px;
       }
 
-      img
+      #top-image
       {
         height: 100%;
+        opacity: 1;
+        transition: opacity .2s;
+      }
+
+      :host(.expanded) #top-image
+      {
+        opacity: 0;
       }
 
       .side-label
@@ -56,23 +63,27 @@
 
       .expand-content
       {
-        display: none;
+        visibility: none;
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
         font-size: 20px;
+        opacity: 0;
+        transition: visibility 0s .2s,opacity .2s;
       }
 
       :host(.expanded) .expand-content
       {
-        display: block;
+        display: visible;
+        opacity: 1;
+        transition: opacity .2s;
       }
     </style>
 
     <div class="wrap" on-click="toggleExpand">
-      <img src="[[initialImage]]">
+      <img id="top-image" src="[[initialImage]]">
       <div class="expand-content">
         <slot id="content"></slot>
       </div>
