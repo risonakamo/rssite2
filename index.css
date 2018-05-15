@@ -117,3 +117,28 @@ p
     height: 50px;
     background-color: red;
 }
+
+/*-- top box inside --*/
+.top-boxbox
+{
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 0;
+}
+
+.top-section
+{
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    vertical-align: top;
+}
+
+.small-listbox
+{
+    display: inline-block;
+    width: 100px;
+    color: white;
+    font-size: 10px;
+}
