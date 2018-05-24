@@ -21,7 +21,7 @@ body
     background-color: #35312e;
 }
 
-p
+p,dd
 {
     margin: 0;
 }
@@ -141,4 +141,9 @@ p
     width: 100px;
     color: white;
     font-size: 13px;
+}
+
+.small-listbox dd
+{
+    height: 18px;
 }
