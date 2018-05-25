@@ -147,3 +147,26 @@ p,dd
 {
     height: 18px;
 }
+
+.small-listbox dd>span
+{
+    position: relative;
+    bottom: 2px;
+    left: 6px;
+}
+
+.small-listbox dd.indented
+{
+    padding-left: 35px;
+    position: relative;
+}
+
+.small-listbox dd.indented .side-border
+{
+    position: absolute;
+    width: 2px;
+    height: 41px;
+    border-left: 1px solid white;
+    top: 9px;
+    left: 22px;
+}
