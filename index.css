@@ -6,6 +6,18 @@
     src: url("font/hw4.otf") format("opentype");
 }
 
+@font-face
+{
+    font-family: "yaku";
+    src: url("font/noto-reg.otf");
+}
+
+@font-face
+{
+    font-family: "yaku-black";
+    src: url("font/noto-bold.otf");
+}
+
 html
 {
     height: 100%;
@@ -16,7 +28,7 @@ body
     height: 100%;
     margin: 0;
     font-size: 0;
-    font-family: "hw4";
+    font-family: "hw4",YuGothic,"YuGothic M","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
     overflow: hidden;
     background-color: #35312e;
 }
@@ -138,9 +150,19 @@ p,dd
 .small-listbox
 {
     display: inline-block;
-    width: 100px;
     color: white;
     font-size: 13px;
+    font-family: "yaku","roboto";
+}
+
+.small-listbox dt
+{
+    width: 200px;
+    height: 27px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    border-bottom: 1px solid white;
+    font-family: "yaku-black";
 }
 
 .small-listbox dd
