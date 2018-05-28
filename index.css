@@ -93,6 +93,7 @@ p,dd
 {
     width: 100%;
     overflow: auto;
+    cursor: -webkit-grab;
 }
 
 .col-holder
