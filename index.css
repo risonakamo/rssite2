@@ -92,7 +92,7 @@ p,dd
 .col-holderscroll
 {
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
     cursor: -webkit-grab;
 }
 

@@ -12,14 +12,14 @@
         height: 450px;
         background-color: #d8d8d8;
         transition: margin .2s,width .3s cubic-bezier(0.39, 0.575, 0.565, 1);
-        cursor: pointer;
+        /* cursor: pointer; */
       }
 
       :host(.expanded)
       {
         width: 500px;
         margin: 0 !important;
-        cursor: default;
+        /* cursor: default; */
       }
 
       .title
@@ -83,7 +83,7 @@
       }
     </style>
 
-    <div class="wrap" on-click="toggleExpand">
+    <div class="wrap" on-mouseup="toggleExpand" on-mousedown="mdown">
       <img id="top-image" src="[[initialImage]]">
       <div class="expand-content">
         <slot id="content"></slot>
@@ -109,8 +109,24 @@
         };
       }
 
-      toggleExpand()
+      mdown(e)
       {
+        //save clicked mouse down coordinate
+        this.mouseX=e.screenX;
+        this.mouseY=e.screenY;
+      }
+
+      toggleExpand(e)
+      {
+        //if mouse up coordinate is far away, a drag occured, do not count the click
+        if (!(this.mouseX && this.mouseY) || (Math.abs(e.screenX-this.mouseX)>10 || Math.abs(e.screenY-this.mouseY)>10))
+        {
+          delete this.mouseX;
+          delete this.mouseY;
+          return;
+        }
+
+
         if (this.classList.contains("expanded"))
         {
           this.classList.remove("expanded");
