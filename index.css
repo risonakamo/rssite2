@@ -130,6 +130,13 @@ p,dd
     background-color: red;
 }
 
+.info-section
+{
+    height: 153px;
+    width: 100%;
+    background-color: white;
+}
+
 /*-- top box inside --*/
 .top-boxbox
 {
