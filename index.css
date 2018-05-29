@@ -157,6 +157,34 @@ p,dd
     width: 200px;
     vertical-align: top;
     font-size: 20px;
+    color: white;
+    font-family: "roboto";
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.info-sectiontall .title
+{
+    font-size: 30px;
+    padding-top: 30px;
+    height: 110px;
+}
+
+.info-sectiontall .description
+{
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 45px;
+}
+
+.info-sectiontall a
+{
+    color: rgb(61,180,242);
+}
+
+.info-sectiontall a:hover
+{
+    color: rgb(144,234,255);
 }
 
 /*-- small section boxes --*/
@@ -185,7 +213,7 @@ p,dd
     color: white;
     padding: 10px;
     box-sizing: border-box;
-    font-family: roboto;
+    font-family: "roboto";
     transition: background-color .2s;
 }
 

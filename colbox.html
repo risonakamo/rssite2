@@ -10,7 +10,6 @@
         vertical-align: top;
         width: 200px;
         height: 450px;
-        background-color: #d8d8d8;
         transition: margin .2s,width .3s cubic-bezier(0.39, 0.575, 0.565, 1),opacity .2s;
         /* cursor: pointer; */
       }
@@ -79,6 +78,7 @@
         font-size: 20px;
         opacity: 0;
         overflow: hidden;
+        background-color: #d8d8d8;
         transition: visibility 0s .2s,opacity .2s;
       }
 
@@ -97,7 +97,7 @@
         <source src="[[initialImage]]" type="video/mp4">
       </video> -->
 
-      <div class="expand-content">
+      <div class="expand-content" style="background-color:[[expandBackgroundcolour]]">
         <slot id="content"></slot>
       </div>
     </div>
@@ -117,7 +117,8 @@
       {
         return {
           boxTitle:String,
-          initialImage:String
+          initialImage:String,
+          expandBackgroundcolour:String
         };
       }
 
@@ -131,7 +132,9 @@
       toggleExpand(e)
       {
         //if mouse up coordinate is far away, a drag occured, do not count the click
-        if (!(this.mouseX && this.mouseY) || (Math.abs(e.screenX-this.mouseX)>10 || Math.abs(e.screenY-this.mouseY)>10))
+        //or if it is not the left click, or certain keys are down
+        if (e.button!=0 || e.ctrlKey || e.shiftKey || !(this.mouseX && this.mouseY)
+            || (Math.abs(e.screenX-this.mouseX)>10 || Math.abs(e.screenY-this.mouseY)>10))
         {
           delete this.mouseX;
           delete this.mouseY;
