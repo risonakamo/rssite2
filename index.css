@@ -123,6 +123,7 @@ p,dd
     color: black;
     font-size: 0;
     overflow: hidden;
+    white-space: normal;
 }
 
 .more-button
@@ -146,6 +147,18 @@ p,dd
     width: 200px;
     vertical-align: top;
     font-size: 20px;
+}
+
+.section-box
+{
+    display: inline-block;
+    width: 50%;
+    height: 150px;
+}
+
+.section-box img
+{
+    width: 100%;
 }
 
 /*-- top box inside --*/
