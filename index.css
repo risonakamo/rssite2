@@ -242,6 +242,46 @@ p,dd
     background-color: rgb(74,195,202,.95);
 }
 
+.description-box.expandimgur
+{
+    background-color: rgba(27,183,110,.77);
+}
+
+.description-box.expandimgur:hover
+{
+    background-color: rgba(27,183,110,.85);
+}
+
+.description-box.steam
+{
+    background-color: rgba(103,193,245,.6);
+}
+
+.description-box.steam:hover
+{
+    background-color: rgba(103,193,245,.75);
+}
+
+.description-box.bshuff
+{
+    background-color: rgba(186,145,130,.75);
+}
+
+.description-box.bshuff:hover
+{
+    background-color: rgba(186,145,130,.85);
+}
+
+.description-box.anirand
+{
+    background-color: rgba(206,181,69,.75);
+}
+
+.description-box.anirand:hover
+{
+    background-color: rgba(206,181,69,.85);
+}
+
 /*-- top box inside --*/
 .top-boxbox
 {
