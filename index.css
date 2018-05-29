@@ -366,7 +366,7 @@ p,dd
 
 .tall-imgslider .inside-slider
 {
-    width: 300px;
+    width: 100%;
 }
 
 .inside-slider.slidedown
