@@ -92,6 +92,11 @@
 
     <div class="wrap" on-mouseup="toggleExpand" on-mousedown="mdown">
       <img id="top-image" src="[[initialImage]]">
+
+      <!-- <video id="top-image" autoplay loop>
+        <source src="[[initialImage]]" type="video/mp4">
+      </video> -->
+
       <div class="expand-content">
         <slot id="content"></slot>
       </div>
