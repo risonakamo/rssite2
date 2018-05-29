@@ -354,3 +354,23 @@ p,dd
     top: 9px;
     left: 22px;
 }
+
+/*-- tall image slider --*/
+.tall-imgslider
+{
+    display: inline-block;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.tall-imgslider .inside-slider
+{
+    width: 300px;
+}
+
+.inside-slider.slidedown
+{
+    transform: translateY(-50%);
+    transition: transform .4s;
+}

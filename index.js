@@ -7,6 +7,7 @@ function main()
     _topslider=document.querySelector(".top-slider");
 
     colboxevents();
+    tallsliders();
 
     // document.querySelector(".more-button").addEventListener("click",(e)=>{
     //     e.currentTarget.parentElement.parentElement.viewmore();
@@ -39,4 +40,28 @@ function colboxevents()
             currentOpen=e.currentTarget;
         });
     }
+}
+
+function tallsliders()
+{
+    var slider=document.querySelector(".inside-slider");
+    var sliderimgs=["img/anitrack/1.png","img/anitrack/2.png",
+        "img/anitrack/3.png","img/anitrack/4.png"];
+    var sliderpos=0;
+
+    setInterval(()=>{
+        sliderpos++;
+        if (sliderpos>=sliderimgs.length)
+        {
+            sliderpos=0;
+        }
+
+        slider.children[1].src=sliderimgs[sliderpos];
+        slider.classList.add("slidedown");
+
+        setTimeout(()=>{
+            slider.children[0].src=sliderimgs[sliderpos];
+            slider.classList.remove("slidedown");
+        },410);
+    },3000);
 }
