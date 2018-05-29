@@ -176,7 +176,6 @@ p,dd
     padding: 10px;
     box-sizing: border-box;
     font-family: roboto;
-    cursor: pointer;
     transition: background-color .2s;
 }
 
@@ -187,10 +186,16 @@ p,dd
 
 .description-box .gitlink
 {
+    text-decoration: none;
     transition: color .2s;
 }
 
-.description-box:hover .gitlink
+.description-box .gitlink:visited
+{
+    color: inherit;
+}
+
+.description-box .gitlink:hover
 {
     color: #22e273;
 }
