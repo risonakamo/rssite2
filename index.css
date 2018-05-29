@@ -112,9 +112,19 @@ p,dd
 }
 
 /*-- col box element outside --*/
-.col-holderholder:hover col-box
+.col-holderholder:hover col-box,.col-holderholder.something-expanded col-box
 {
     margin: 0 0 0 40px;
+}
+
+.col-holderholder.something-expanded col-box
+{
+    opacity: .3;
+}
+
+.col-holderholder.something-expanded col-box.expanded
+{
+    opacity: 1;
 }
 
 /*-- colbox content (light dom) --*/

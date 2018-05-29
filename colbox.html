@@ -11,7 +11,7 @@
         width: 200px;
         height: 450px;
         background-color: #d8d8d8;
-        transition: margin .2s,width .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+        transition: margin .2s,width .3s cubic-bezier(0.39, 0.575, 0.565, 1),opacity .2s;
         /* cursor: pointer; */
       }
 
@@ -57,12 +57,13 @@
         transition: opacity .2s;
       }
 
-      :host(.expanded):host-context(.col-holderholder:hover) .side-label
+      :host(.expanded):host-context(.col-holderholder:hover) .side-label,
+      :host(.expanded):host-context(.col-holderholder.something-expanded) .side-label
       {
         opacity: 0;
       }
 
-      :host-context(.col-holderholder:hover) .side-label
+      :host-context(.col-holderholder:hover) .side-label,:host-context(.col-holderholder.something-expanded) .side-label
       {
         opacity: 1;
       }
@@ -135,12 +136,14 @@
 
         if (this.classList.contains("expanded"))
         {
+          this.parentElement.classList.remove("something-expanded");
           this.classList.remove("expanded");
         }
 
         else
         {
           this.classList.add("expanded");
+          this.parentElement.classList.add("something-expanded");
           this.dispatchEvent(new CustomEvent("expanded"));
         }
       }

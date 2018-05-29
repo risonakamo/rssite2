@@ -16,6 +16,7 @@ function main()
 //col-box outside event handlers
 function colboxevents()
 {
+    var colholder=document.querySelector(".col-holderholder");
     var colboxs=document.querySelectorAll("col-box");
     var currentOpen;
 
