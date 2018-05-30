@@ -618,3 +618,10 @@ p,dd
 {
     margin-top: 20px;
 }
+
+/*-- footer --*/
+footer
+{
+    height: 50px;
+    background-color: #c11e2d;
+}
