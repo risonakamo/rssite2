@@ -100,9 +100,8 @@
       <div class="expand-content" style="background-color:[[expandBackgroundcolour]]">
         <slot id="content"></slot>
       </div>
+      <div class="side-label spec1">[[boxTitle]]</div>
     </div>
-
-    <div class="side-label spec1">[[boxTitle]]</div>
   </template>
 
   <script>
@@ -131,6 +130,7 @@
 
       toggleExpand(e)
       {
+        console.log("what");
         //if mouse up coordinate is far away, a drag occured, do not count the click
         //or if it is not the left click, or certain keys are down
         if (e.button!=0 || e.ctrlKey || e.shiftKey || !(this.mouseX && this.mouseY)

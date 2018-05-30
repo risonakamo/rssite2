@@ -402,3 +402,45 @@ p,dd
     transform: translateY(-50%);
     transition: transform .4s;
 }
+
+/*-- ellephant info --*/
+.ellephant-top
+{
+    height: 100px;
+    width: 100%;
+    font-family: "roboto";
+    color: white;
+}
+
+.ellephant-top>div
+{
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.ellephant-top .title
+{
+    font-size: 45px;
+    padding-top: 19px;
+}
+
+.ellephant-top .description
+{
+    font-size: 13px;
+    font-weight: 300;
+    color: #99639b;
+    padding-top: 20px;
+}
+
+.ellephant-top .description a,.ellephant-top .description a:visited
+{
+    color: #6693a0;
+}
+
+.ellephant-top .description a:hover
+{
+    color: #9fc3d3;
+}
