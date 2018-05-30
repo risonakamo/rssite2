@@ -268,7 +268,6 @@ p,dd
 
 .description-box .gitlink
 {
-    text-decoration: none;
     transition: color .2s;
 }
 
@@ -291,6 +290,13 @@ p,dd
     text-align: center;
     box-sizing: border-box;
     padding: 34px 36px 0 42px;
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+.section-box.gitbox:hover
+{
+    opacity: .5;
 }
 
 .section-box.main-title
@@ -299,6 +305,11 @@ p,dd
     box-sizing: border-box;
     color: white;
     background-color: #5f6076;
+}
+
+.section-box.main-title.other2
+{
+    background-color: #5a3c3c;
 }
 
 .section-box .main-title
