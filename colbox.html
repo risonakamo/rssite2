@@ -11,14 +11,14 @@
         width: 200px;
         height: 450px;
         transition: margin .2s,width .3s cubic-bezier(0.39, 0.575, 0.565, 1),opacity .2s;
-        /* cursor: pointer; */
+        cursor: pointer;
       }
 
       :host(.expanded)
       {
         width: 500px;
         margin: 0 !important;
-        /* cursor: default; */
+        cursor: inherit;
       }
 
       .title
@@ -62,7 +62,8 @@
         opacity: 0;
       }
 
-      :host-context(.col-holderholder:hover) .side-label,:host-context(.col-holderholder.something-expanded) .side-label
+      :host-context(.col-holderholder:hover) .side-label,
+      :host-context(.col-holderholder.something-expanded) .side-label
       {
         opacity: 1;
       }

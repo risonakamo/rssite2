@@ -17,8 +17,9 @@ function main()
 //col-box outside event handlers
 function colboxevents()
 {
-    var colholder=document.querySelector(".col-holderholder");
-    var colboxs=document.querySelectorAll("col-box");
+    var colscroll=document.querySelector(".col-holderscroll");
+    var colholder=colscroll.querySelector(".col-holderholder");
+    var colboxs=colholder.querySelectorAll("col-box");
     var currentOpen;
 
     for (var x=0;x<colboxs.length;x++)
@@ -40,6 +41,11 @@ function colboxevents()
             currentOpen=e.currentTarget;
         });
     }
+
+
+    colscroll.addEventListener("mousedown",(e)=>{
+
+    });
 }
 
 function tallsliders()

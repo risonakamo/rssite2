@@ -122,9 +122,15 @@ p,dd
     opacity: .3;
 }
 
-.col-holderholder.something-expanded col-box.expanded
+.col-holderholder.something-expanded col-box.expanded,
+.col-holderholder.something-expanded col-box.expanded:hover
 {
     opacity: 1;
+}
+
+.col-holderholder.something-expanded col-box:hover
+{
+    opacity: .8;
 }
 
 /*-- colbox content (light dom) --*/
