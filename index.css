@@ -487,3 +487,64 @@ p,dd
 {
     color: #9fc3d3;
 }
+
+/*-- abduction --*/
+.abduct
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #00ff02;
+    font-family: "roboto";
+}
+
+.abduct>div
+{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.abduct .first
+{
+    display: inline-block;
+    width: 375px;
+}
+
+.abduct .second
+{
+    position: absolute;
+    width: 250px;
+    bottom: 0;
+    right: 0;
+}
+
+.abduct .title
+{
+    width: 125px;
+    font-size: 20px;
+    padding: 80px 0 0 7px;
+}
+
+.abduct .description
+{
+    font-size: 13px;
+    width: 250px;
+    font-weight: 300;
+    padding: 21px 2px 0 27px;
+}
+
+.abduct .subtext
+{
+    color: #56a5c2;
+}
+
+.abduct a,.abduct a:visited
+{
+    color: #9e53a5;
+}
+
+.abduct a:hover
+{
+    color: #bc54c5;
+}
