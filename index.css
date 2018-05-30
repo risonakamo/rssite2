@@ -237,6 +237,8 @@ p,dd
     position: relative;
     width: 50%;
     height: 150px;
+    font-family: "roboto";
+    vertical-align: top;
 }
 
 .section-box img
@@ -256,7 +258,6 @@ p,dd
     color: white;
     padding: 10px;
     box-sizing: border-box;
-    font-family: "roboto";
     transition: background-color .2s;
 }
 
@@ -279,6 +280,36 @@ p,dd
 .description-box .gitlink:hover
 {
     color: #22e273;
+}
+
+.section-box.gitbox
+{
+    background-color: #22e273;
+    font-size: 32px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 34px 36px 0 42px;
+}
+
+.section-box.main-title
+{
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #5f6076;
+}
+
+.section-box .main-title
+{
+    font-size: 27px;
+}
+
+.section-box.main-title .description
+{
+    font-size: 18px;
+    font-weight: 300;
 }
 
 /*-- description box colours --*/
