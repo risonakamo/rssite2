@@ -596,3 +596,62 @@ p,dd
 {
     color: #bc54c5;
 }
+
+/*-- left top side --*/
+.top-section.left
+{
+    font-family: "roboto";
+    font-weight: 300;
+    color: white;
+    padding: 100px 0 0 20px;
+    box-sizing: border-box;
+}
+
+.name-title
+{
+    font-size: 55px;
+}
+
+.top-section.left .dark-label
+{
+    font-size: 15px;
+    background-color: #3e3e3e;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.top-section.left .description
+{
+    font-size: 19px;
+    white-space: normal;
+}
+
+.contact-box
+{
+    margin-top: 20px;
+}
+
+.contact-box>div
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.white-borderbox
+{
+    padding: 4px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.borderbox-after
+{
+    padding: 2px 0 0 4px;
+}
+
+.left-description
+{
+    margin-top: 20px;
+}
