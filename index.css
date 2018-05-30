@@ -39,23 +39,6 @@ p,dd
 }
 
 /*-- top elements --*/
-.top-slider
-{
-    white-space: nowrap;
-    transition: transform .5s ease-out;
-}
-
-.top-slider.subpage-active
-{
-    transform: translateX(-100%);
-}
-
-.top-slider>div
-{
-    display: inline-block;
-    vertical-align: top;
-}
-
 .main-pageholder
 {
     width: 100%;
@@ -70,12 +53,6 @@ p,dd
     min-height: 100%;
     flex-direction: column;
     overflow: hidden;
-}
-
-.sub-page
-{
-    width: 100%;
-    font-size: 20px;
 }
 
 .top-box
