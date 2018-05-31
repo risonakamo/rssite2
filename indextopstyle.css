@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+@font-face
+{
+    font-family: "hw4";
+    src: url("font/hw4.otf") format("opentype");
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    margin: 0;
+    font-size: 0;
+    font-family: "roboto","hw4",YuGothic,"YuGothic M","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    overflow: hidden;
+    background-color: #35312e;
+}
+
+p,dd
+{
+    margin: 0;
+}
+
+/*-- top elements --*/
+.main-pageholder
+{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.main-page
+{
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.top-box
+{
+    display: flex;
+    width: 100%;
+    /* height: 35%; */
+    min-height: 400px;
+    background-color: #c11e2d;
+    flex: 1 1 auto;
+}
+
+/*-- top box inside --*/
+.top-boxbox
+{
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 0;
+}
+
+.top-section
+{
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    vertical-align: top;
+}
+
+.small-listbox
+{
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+}
+
+.small-listbox dt
+{
+    width: 200px;
+    height: 27px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    border-bottom: 1px solid white;
+}
+
+.small-listbox dd
+{
+    height: 18px;
+}
+
+.small-listbox dd>span
+{
+    position: relative;
+    bottom: 2px;
+    left: 6px;
+}
+
+.small-listbox dd.indented
+{
+    padding-left: 35px;
+    position: relative;
+}
+
+.small-listbox dd.indented .side-border
+{
+    position: absolute;
+    width: 2px;
+    height: 41px;
+    border-left: 1px solid white;
+    top: 9px;
+    left: 22px;
+}
+
+/*-- left top side --*/
+.top-section.left
+{
+    font-family: "roboto";
+    font-weight: 300;
+    color: white;
+    padding: 100px 0 0 20px;
+    box-sizing: border-box;
+}
+
+.name-title
+{
+    font-size: 55px;
+}
+
+.top-section.left .dark-label
+{
+    font-size: 15px;
+    background-color: #3e3e3e;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.top-section.left .description
+{
+    font-size: 19px;
+    white-space: normal;
+}
+
+.contact-box
+{
+    margin-top: 20px;
+}
+
+.contact-box>div
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.white-borderbox
+{
+    padding: 4px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.borderbox-after
+{
+    padding: 2px 0 0 4px;
+}
+
+.left-description
+{
+    margin-top: 20px;
+}
+
+/*-- footer --*/
+footer
+{
+    height: 50px;
+    background-color: #c11e2d;
+}
