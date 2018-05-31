@@ -75,9 +75,10 @@ function tallsliders()
 
 function footerchange()
 {
-    document.querySelector("footer .show-about").addEventListener("click",(e)=>{
+    var footer=document.querySelector("footer");
+    footer.querySelector(".show-about a").addEventListener("click",(e)=>{
         e.preventDefault();
 
-        e.currentTarget.parentElement.classList.add("show");
+        footer.classList.add("show");
     });
 }

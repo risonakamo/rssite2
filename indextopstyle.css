@@ -64,7 +64,7 @@ a:hover
     width: 100%;
     /* height: 35%; */
     min-height: 400px;
-    background-color: #c11e2d;
+    background-color: #d1332e;
     flex: 1 1 auto;
     justify-content: space-between;
     align-items: center;
@@ -202,13 +202,22 @@ a:hover
 /*-- footer --*/
 footer
 {
+    position: relative;
     height: 50px;
-    background-color: #c11e2d;
+    background-color: #d1332e;
     color: white;
     font-size: 14px;
     text-align: center;
-    line-height: 0;
-    padding-top: 24px;
+}
+
+.footer-box
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 9px;
     box-sizing: border-box;
 }
 
