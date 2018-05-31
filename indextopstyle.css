@@ -51,6 +51,8 @@ p,dd,dl
     min-height: 400px;
     background-color: #c11e2d;
     flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 /*-- top box inside --*/
@@ -58,7 +60,7 @@ p,dd,dl
 {
     width: 1000px;
     max-width: 100%;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 0;
 }
 
