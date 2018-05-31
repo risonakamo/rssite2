@@ -21,7 +21,7 @@ body
     background-color: #35312e;
 }
 
-p,dd
+p,dd,dl
 {
     margin: 0;
 }
@@ -75,13 +75,15 @@ p,dd
     display: inline-block;
     color: white;
     font-size: 13px;
+    vertical-align: top;
+    margin: 12px;
 }
 
 .small-listbox dt
 {
     width: 200px;
-    height: 27px;
-    margin-bottom: 3px;
+    height: 22px;
+    margin-bottom: 8px;
     font-size: 14px;
     border-bottom: 1px solid white;
 }
