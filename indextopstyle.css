@@ -51,8 +51,15 @@ p,dd,dl
     min-height: 400px;
     background-color: #c11e2d;
     flex: 1 1 auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.spacer
+{
+    flex-grow: 1;
 }
 
 /*-- top box inside --*/
@@ -123,7 +130,6 @@ p,dd,dl
 {
     font-family: "roboto";
     font-weight: 300;
-    color: white;
     padding: 100px 0 0 20px;
     box-sizing: border-box;
 }
@@ -182,4 +188,12 @@ footer
 {
     height: 50px;
     background-color: #c11e2d;
+}
+
+/*-- col box label thing (but still in top box)--*/
+.top-boxbox.col-label
+{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
 }
