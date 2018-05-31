@@ -1,0 +1,40 @@
+@media (max-width:1000px)
+{
+    .top-box
+    {
+        align-items: start;
+    }
+
+    .top-boxbox
+    {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .top-section
+    {
+        width: 100%;
+        max-width: 500px;
+        min-height: 350px;
+    }
+
+    .top-section.left
+    {
+        padding-top: 60px;
+    }
+
+    .small-listbox
+    {
+        font-size: 14px;
+    }
+
+    .main-page .col-holderscroll
+    {
+        overflow: auto;
+    }
+
+    col-box
+    {
+        margin: 0 0 0 40px;
+    }
+}
