@@ -8,6 +8,7 @@ function main()
 
     colboxevents();
     tallsliders();
+    footerchange();
 
     // document.querySelector(".more-button").addEventListener("click",(e)=>{
     //     e.currentTarget.parentElement.parentElement.viewmore();
@@ -70,4 +71,13 @@ function tallsliders()
             slider.classList.remove("slidedown");
         },410);
     },3000);
+}
+
+function footerchange()
+{
+    document.querySelector("footer .show-about").addEventListener("click",(e)=>{
+        e.preventDefault();
+
+        e.currentTarget.parentElement.classList.add("show");
+    });
 }
