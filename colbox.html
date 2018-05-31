@@ -53,7 +53,14 @@
         /* z-index: -1; */
         opacity: 0;
         color: white;
+        font-family: "roboto","hw4";
+        font-weight: 400;
         transition: opacity .2s;
+      }
+
+      .side-label.en
+      {
+        left: 63px;
       }
 
       :host(.expanded):host-context(.col-holderholder:hover) .side-label,
@@ -102,7 +109,7 @@
       <div class="expand-content" style="background-color:[[expandBackgroundcolour]]">
         <slot id="content"></slot>
       </div>
-      <div class="side-label spec1">[[boxTitle]]</div>
+      <div id="side-label" class="side-label spec1">[[boxTitle]]</div>
     </div>
   </template>
 
@@ -119,8 +126,19 @@
         return {
           boxTitle:String,
           initialImage:String,
-          expandBackgroundcolour:String
+          expandBackgroundcolour:String,
+          lang:String
         };
+      }
+
+      ready()
+      {
+        super.ready();
+
+        if (this.lang=="en")
+        {
+          this.$["side-label"].classList.add("en");
+        }
       }
 
       mdown(e)
