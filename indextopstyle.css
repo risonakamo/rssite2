@@ -26,6 +26,16 @@ p,dd,dl
     margin: 0;
 }
 
+a,a:visited
+{
+    color: white;
+}
+
+a:hover
+{
+    color: #c1c1c1;
+}
+
 /*-- top elements --*/
 .main-pageholder
 {
@@ -143,6 +153,7 @@ p,dd,dl
 {
     font-size: 15px;
     background-color: #3e3e3e;
+    background: linear-gradient(125deg, #3e3e3e 89%, #666666 92%);
     padding: 5px;
     border-radius: 7px;
 }
@@ -155,7 +166,7 @@ p,dd,dl
 
 .contact-box
 {
-    margin-top: 20px;
+    margin-top: 7px;
 }
 
 .contact-box>div
@@ -180,7 +191,7 @@ p,dd,dl
 
 .left-description
 {
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
 }
 
 /*-- footer --*/
