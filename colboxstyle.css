@@ -257,27 +257,32 @@
 /*-- description box colours --*/
 .description-box.iga
 {
-    background-color: rgba(199,36,58,.7);
+    background-color: rgba(150,16,34,.7);
 }
 
 .description-box.iga:hover
 {
-    background-color: rgba(199,36,58,.85);
+    background-color: rgba(150,16,34,.85);
 }
 
 .description-box.tabber
 {
-    background-color: rgb(5,137,63,.7);
+    background-color: rgba(0,49,22,.8);
 }
 
 .description-box.tabber:hover
 {
-    background-color: rgb(5,137,63,.85);
+    background-color: rgba(0,49,22,.9);
 }
 
 .description-box.bgmview
 {
     background-color: rgba(183,183,183,.7);
+    color: black;
+}
+
+.description-box.bgmview a
+{
     color: black;
 }
 
@@ -288,52 +293,52 @@
 
 .description-box.fcards
 {
-    background-color: rgb(74,195,202,.85);
+    background-color: rgba(26,99,103,.85);
 }
 
 .description-box.fcards:hover
 {
-    background-color: rgb(74,195,202,.95);
+    background-color: rgba(26,99,103,.95);
 }
 
 .description-box.expandimgur
 {
-    background-color: rgba(27,183,110,.77);
+    background-color: rgba(4,93,51,.77);
 }
 
 .description-box.expandimgur:hover
 {
-    background-color: rgba(27,183,110,.85);
+    background-color: rgba(4,93,51,.85);
 }
 
 .description-box.steam
 {
-    background-color: rgba(103,193,245,.6);
+    background-color: rgba(23,68,95,.8);
 }
 
 .description-box.steam:hover
 {
-    background-color: rgba(103,193,245,.75);
+    background-color: rgba(23,68,95,.75);
 }
 
 .description-box.bshuff
 {
-    background-color: rgba(186,145,130,.75);
+    background-color: rgba(93,62,51,.75);
 }
 
 .description-box.bshuff:hover
 {
-    background-color: rgba(186,145,130,.85);
+    background-color: rgba(93,62,51,.85);
 }
 
 .description-box.anirand
 {
-    background-color: rgba(206,181,69,.75);
+    background-color: rgba(142,118,8,0.8);
 }
 
 .description-box.anirand:hover
 {
-    background-color: rgba(206,181,69,.85);
+    background-color: rgba(142,118,8,0.9);
 }
 
 /*-- tall image slider --*/
