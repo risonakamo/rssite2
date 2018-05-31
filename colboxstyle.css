@@ -3,6 +3,9 @@
 {
     width: 100%;
     overflow: hidden;
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
     cursor: -webkit-grab;
 }
 
@@ -41,6 +44,18 @@
 .col-holderholder.something-expanded col-box:hover
 {
     opacity: .8;
+}
+
+.col-holderholder:hover col-box.expanded .side-label,
+.col-holderholder.something-expanded col-box.expanded .side-label
+{
+    opacity: 0;
+}
+
+.col-holderholder:hover col-box .side-label,
+.col-holderholder.something-expanded col-box .side-label
+{
+    opacity: 1;
 }
 
 /*-- colbox content (light dom) --*/
