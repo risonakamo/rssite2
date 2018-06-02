@@ -52,8 +52,20 @@ function colboxevents()
 function tallsliders()
 {
     var slider=document.querySelector(".inside-slider");
-    var sliderimgs=["img/anitrack/1.png","img/anitrack/2.png",
-        "img/anitrack/3.png","img/anitrack/4.png"];
+
+    var sliderimgs;
+    if (!document.documentElement.lang || document.documentElement.lang!="ja")
+    {
+        sliderimgs=["../img/anitrack/1.png","../img/anitrack/2.png",
+            "../img/anitrack/3.png","../img/anitrack/4.png"];
+    }
+
+    else
+    {
+        sliderimgs=["img/anitrack/1.png","img/anitrack/2.png",
+            "img/anitrack/3.png","img/anitrack/4.png"];
+    }
+
     var sliderpos=0;
 
     setInterval(()=>{

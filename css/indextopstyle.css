@@ -3,7 +3,7 @@
 @font-face
 {
     font-family: "hw4";
-    src: url("font/hw4.otf") format("opentype");
+    src: url("../font/hw4.otf") format("opentype");
 }
 
 @viewport
@@ -109,7 +109,7 @@ a:hover
     height: 22px;
     margin-bottom: 8px;
     font-size: 14px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255,255,255,.6);
 }
 
 .small-listbox dd
