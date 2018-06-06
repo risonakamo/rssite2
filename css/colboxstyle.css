@@ -450,6 +450,11 @@
     line-height: 1.2;
 }
 
+.abduct .description.jp
+{
+    padding: 16px 18px 0px 27px;
+}
+
 .abduct .subtext
 {
     color: #56a5c2;
