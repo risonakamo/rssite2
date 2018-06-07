@@ -2,6 +2,7 @@ window.onload=main;
 
 var _topslider;
 var _loadedimg=0;
+var _colscroll;
 
 function main()
 {
@@ -19,8 +20,8 @@ function main()
 //col-box outside event handlers
 function colboxevents()
 {
-    var colscroll=document.querySelector(".col-holderscroll");
-    var colholder=colscroll.querySelector(".col-holderholder");
+    _colscroll=document.querySelector(".col-holderscroll");
+    var colholder=_colscroll.querySelector(".col-holderholder");
     var colboxs=colholder.querySelectorAll("col-box");
     var currentOpen;
 
@@ -43,6 +44,8 @@ function colboxevents()
             currentOpen=e.currentTarget;
         });
     }
+
+    colboxloaded();
 }
 
 function tallsliders()
@@ -91,13 +94,14 @@ function footerchange()
     });
 }
 
+//run when a colbox img finishes loading, or the colboxevents finishes
 function colboxloaded()
 {
     _loadedimg++;
 
     //for 6 colboxes
-    if (_loadedimg==6)
+    if (_loadedimg>=6 && _colscroll)
     {
-        console.log("colbox loaded");
+        _colscroll.classList.remove("loading");
     }
 }

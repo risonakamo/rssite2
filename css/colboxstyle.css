@@ -4,10 +4,12 @@
     width: 100%;
     overflow: hidden;
     cursor: move;
-    cursor: grab;
-    cursor: -moz-grab;
     cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
     background-color: #35312e;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .col-holder
@@ -17,6 +19,10 @@
     /* width: auto; */
     /* justify-content: center; */
     flex: 0 1 450px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition: opacity .2s 10ms,transform .2s 10ms,visibility 0s 0s;
 }
 
 .col-holderholder
@@ -502,4 +508,39 @@
 .abduct a:hover
 {
     color: #bc54c5;
+}
+
+/*-- loading --*/
+.col-holderscroll.loading
+{
+    position: relative;
+    cursor: default;
+}
+
+.col-holderscroll.loading .col-holder
+{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+}
+
+.loading-msg
+{
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    font-size: 20px;
+    opacity: 0;
+    color: white;
+    left: 50%;
+    top: 10%;
+    transform: translateY(-10px);
+    transition: opacity .2s 10ms,transform .2s 10ms,visibility 0s 0s;
+}
+
+.col-holderscroll.loading .loading-msg
+{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
 }
