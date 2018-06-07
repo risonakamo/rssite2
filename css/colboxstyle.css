@@ -102,6 +102,11 @@
     padding-top: 34px;
 }
 
+.azl-info .title.jp
+{
+    padding-top: 10px;
+}
+
 .azl-info .title>span
 {
     vertical-align: top;
