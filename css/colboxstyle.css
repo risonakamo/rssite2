@@ -390,12 +390,24 @@
     padding-top: 19px;
 }
 
+.ellephant-top.jp .title
+{
+    position: relative;
+    width: 180px;
+}
+
 .ellephant-top .description
 {
     font-size: 13px;
     font-weight: 300;
     color: #99639b;
     padding-top: 20px;
+}
+
+.ellephant-top.jp .description
+{
+    width: 225px;
+    padding: 12px 10px 0 17px;
 }
 
 .ellephant-top .description a,.ellephant-top .description a:visited
@@ -406,6 +418,22 @@
 .ellephant-top .description a:hover
 {
     color: #9fc3d3;
+}
+
+.ellephant-top .img-hold
+{
+    width: 95px;
+}
+
+.ellephant-top.jp .title-furi
+{
+    position: absolute;
+    color: #312e3e;
+    font-size: 11px;
+    bottom: 11px;
+    letter-spacing: 19px;
+    white-space: nowrap;
+    left: 12px;
 }
 
 /*-- abduction --*/
