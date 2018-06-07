@@ -1,6 +1,7 @@
 window.onload=main;
 
 var _topslider;
+var _loadedimg=0;
 
 function main()
 {
@@ -42,11 +43,6 @@ function colboxevents()
             currentOpen=e.currentTarget;
         });
     }
-
-
-    colscroll.addEventListener("mousedown",(e)=>{
-
-    });
 }
 
 function tallsliders()
@@ -93,4 +89,15 @@ function footerchange()
 
         footer.classList.add("show");
     });
+}
+
+function colboxloaded()
+{
+    _loadedimg++;
+
+    //for 6 colboxes
+    if (_loadedimg==6)
+    {
+        console.log("colbox loaded");
+    }
 }

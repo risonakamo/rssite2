@@ -112,7 +112,7 @@
     </style>
 
     <div class="wrap" on-mouseup="toggleExpand" on-mousedown="mdown">
-      <img id="top-image" src="[[initialImage]]">
+      <img id="top-image" src="[[initialImage]]" on-load="loaded">
 
       <!-- <video id="top-image" autoplay loop>
         <source src="[[initialImage]]" type="video/mp4">
@@ -191,6 +191,11 @@
       {
         //not done
         _topslider.classList.add("subpage-active");
+      }
+
+      loaded()
+      {
+        colboxloaded();
       }
     }
 
