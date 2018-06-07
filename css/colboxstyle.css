@@ -7,6 +7,7 @@
     cursor: grab;
     cursor: -moz-grab;
     cursor: -webkit-grab;
+    background-color: #35312e;
 }
 
 .col-holder

@@ -23,7 +23,12 @@ body
     font-size: 0;
     font-family: "roboto","hw4",YuGothic,"YuGothic M","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
     overflow: hidden;
-    background-color: #35312e;
+    background-color: #d1332e;
+}
+
+body.jp
+{
+    background-color: #5b6283;
 }
 
 p,dd,dl
@@ -64,7 +69,6 @@ a:hover
     width: 100%;
     /* height: 35%; */
     min-height: 400px;
-    background-color: #d1332e;
     flex: 1 1 auto;
     justify-content: space-between;
     align-items: center;
@@ -156,6 +160,28 @@ a:hover
     height: 17px;
 }
 
+.small-listbox.small-listbox.langbox-jp dd
+{
+    line-height: 1;
+}
+
+.small-listbox dd a.lang-link
+{
+    color: #ff5752;
+    font-size: 14px;
+}
+
+.small-listbox dd a.lang-link:hover
+{
+    opacity: .7;
+}
+
+.small-listbox dd a.lang-link.en
+{
+    color: #b0beff;
+    font-size: 13px;
+}
+
 /*-- left top side --*/
 .top-section.left
 {
@@ -225,7 +251,6 @@ footer
 {
     position: relative;
     height: 50px;
-    background-color: #d1332e;
     color: white;
     font-size: 14px;
     text-align: center;
