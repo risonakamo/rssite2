@@ -197,6 +197,12 @@ a:hover
     margin-top: 8px;
 }
 
+.name-furi
+{
+    font-size: 19px;
+    opacity: .8;
+}
+
 .top-section.left .dark-label
 {
     font-size: 15px;
