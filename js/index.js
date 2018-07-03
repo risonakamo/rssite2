@@ -104,4 +104,10 @@ function colboxloaded()
     {
         _colscroll.classList.remove("loading");
     }
+
+    var videos=document.querySelectorAll(".edge-videoplay");
+    for (var x=0;x<videos.length;x++)
+    {
+        videos[x].play();
+    }
 }
