@@ -295,3 +295,16 @@ footer.show .show-about
     text-align: center;
     padding: 15px 0 10px 0;
 }
+
+/*-- course list --*/
+.course-list ul
+{
+    display: none;
+    padding: 0 0 0 35px;
+    margin: 0;
+}
+
+.course-list ul.show
+{
+    display: block;
+}

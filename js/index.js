@@ -11,6 +11,7 @@ function main()
     colboxevents();
     tallsliders();
     footerchange();
+    toggleCourses();
 
     // document.querySelector(".more-button").addEventListener("click",(e)=>{
     //     e.currentTarget.parentElement.parentElement.viewmore();
@@ -110,4 +111,26 @@ function colboxloaded()
     {
         videos[x].play();
     }
+}
+
+function toggleCourses()
+{
+    var courseslist=document.querySelector(".course-list ul");
+    var shown=false;
+    document.querySelector(".courses-link").addEventListener("click",(e)=>{
+        e.preventDefault();
+        courseslist.classList.toggle("show");
+
+        if (shown)
+        {
+            e.currentTarget.innerText="show list of some relevant UMBC courses...";
+        }
+
+        else
+        {
+            e.currentTarget.innerText="hide list of some relevant UMBC courses...";
+        }
+
+        shown=!shown;
+    });
 }
