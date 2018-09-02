@@ -139,16 +139,6 @@ a:hover
     position: relative;
 }
 
-.small-listbox dd.indented .side-border
-{
-    position: absolute;
-    width: 2px;
-    height: 41px;
-    border-left: 1px solid white;
-    top: 6px;
-    left: 22px;
-}
-
 .small-listbox dd.furi
 {
     line-height: 1;

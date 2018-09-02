@@ -12,6 +12,7 @@ function main()
     tallsliders();
     footerchange();
     toggleCourses();
+    toggleLanguages();
 
     // document.querySelector(".more-button").addEventListener("click",(e)=>{
     //     e.currentTarget.parentElement.parentElement.viewmore();
@@ -132,5 +133,15 @@ function toggleCourses()
         }
 
         shown=!shown;
+    });
+}
+
+function toggleLanguages()
+{
+    var languagesList=document.querySelector(".languages-list");
+    document.querySelector(".language-link").addEventListener("click",(e)=>{
+        e.preventDefault();
+
+        languagesList.classList.toggle("expanded");
     });
 }

@@ -1,0 +1,17 @@
+.indented .side-border {
+  position: absolute;
+  width: 2px;
+  height: 36px;
+  top: 9px;
+  left: 22px;
+  border-left: 1px solid white;
+}
+dl.expanded .indented .side-border {
+  height: 72px;
+}
+.hidden-indented {
+  display: none;
+}
+dl.expanded .hidden-indented {
+  display: block;
+}

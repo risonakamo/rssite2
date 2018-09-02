@@ -1,0 +1,27 @@
+@indentedNumber: 3;
+@expandedIndentedNumber: 5;
+
+.indented .side-border
+{
+    position: absolute;
+    width: 2px;
+    height: 18px+((@indentedNumber - 2)*18px);
+    top: 9px;
+    left: 22px;
+    border-left: 1px solid white;
+
+    dl.expanded &
+    {
+        height: 18px+((@expandedIndentedNumber - 2)*18px);
+    }
+}
+
+.hidden-indented
+{
+    display: none;
+
+    dl.expanded &
+    {
+        display: block;
+    }
+}
