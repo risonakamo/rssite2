@@ -124,12 +124,12 @@ function toggleCourses()
 
         if (shown)
         {
-            e.currentTarget.innerText="show list of some relevant UMBC courses...";
+            e.currentTarget.innerText="Show list of some relevant UMBC courses...";
         }
 
         else
         {
-            e.currentTarget.innerText="hide list of some relevant UMBC courses...";
+            e.currentTarget.innerText="Hide list of some relevant UMBC courses...";
         }
 
         shown=!shown;
