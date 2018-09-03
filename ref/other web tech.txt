@@ -1,0 +1,15 @@
+Chrome Extension API
+Gulp
+Babel
+LESS
+jQuery
+PHP*
+MongoDB*
+Express*
+GraphQL*
+WordPress**
+Redux**
+Webpack**
+
+*experience with
+**currently learning
