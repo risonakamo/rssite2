@@ -298,3 +298,40 @@ footer.show .show-about
 {
     display: block;
 }
+
+/*-- final old site warning --*/
+.old-site
+{
+    display: block;
+    background-color: #060f17;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    padding: 50px 20px 50px 20px;
+    transition: background-color .2s;
+}
+
+.old-site .link-highlight
+{
+    color: #84f7b5;
+}
+
+.old-site:hover
+{
+    background-color: #17271e;
+}
+
+@keyframes fat-in
+{
+    from
+    {
+        padding: 0 0 0 0;
+    }
+
+    to
+    {
+        padding: 50px 20px 50px 20px;
+    }
+}
