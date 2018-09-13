@@ -322,16 +322,3 @@ footer.show .show-about
 {
     background-color: #17271e;
 }
-
-@keyframes fat-in
-{
-    from
-    {
-        padding: 0 0 0 0;
-    }
-
-    to
-    {
-        padding: 50px 20px 50px 20px;
-    }
-}
